@@ -67,4 +67,4 @@ Pa4/
 
 ## Video de exposición
 
-* **Enlace en YouTube:** []
+* **Enlace en YouTube:** https://youtu.be/bP27ocIOuDE
