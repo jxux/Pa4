@@ -45,7 +45,7 @@ public class GestorInventario {
         }
     }
 
-    // Búsqueda por código
+    // Búsqueda por Código
     public Producto buscarPorCodigo(String codigo) {
         for (Producto p : productos) {
             if (p.getCodigo().equalsIgnoreCase(codigo)) {
@@ -55,14 +55,14 @@ public class GestorInventario {
         return null;
     }
 
-    // Ordenamiento por precio final ascendente (convierte HashSet a ArrayList)
+    // Ordenamiento por Precio final Ascendente (convierte HashSet a ArrayList)
     public List<Producto> listarOrdenadosPorPrecioFinal() {
         List<Producto> listaOrdenada = new ArrayList<>(productos);
         listaOrdenada.sort(Comparator.comparingDouble(Producto::calcularPrecioFinal));
         return listaOrdenada;
     }
 
-    // Ordenamiento alfabético por nombre
+    // Ordenamiento Alfabético por Nombre
     public List<Producto> listarOrdenadosPorNombre() {
         List<Producto> listaOrdenada = new ArrayList<>(productos);
         listaOrdenada.sort(Comparator.comparing(Producto::getNombre, String.CASE_INSENSITIVE_ORDER));
